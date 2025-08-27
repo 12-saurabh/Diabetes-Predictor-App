@@ -37,3 +37,4 @@ if st.button("Predict"):
     input_data = np.array([[preg, glucose, bp, skin, insulin, bmi, dpf, age]])
     result = model.predict(input_data)[0]
     st.success("Positive for Diabetes" if result == 1 else "Negative for Diabetes")
+
